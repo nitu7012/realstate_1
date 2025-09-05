@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salford Real Estate</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bot-n-realestate-navbar fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Salford Logo">
+            </a>
+
+            <!-- Toggle for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#realestateNav"
+                aria-controls="realestateNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="realestateNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price"><i class="fa-solid fa-indian-rupee-sign"></i> Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#floor-plan-item"><i class="fa-solid fa-table-cells-large"></i> Site &
+                            Floor Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#anemtitie"><i class="fa-solid fa-couch"></i> Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"><i class="fa-regular fa-image"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn download-btn" href="#"><i class="fa-solid fa-download"></i> Download Brochure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bot-n-hero-realestate">
+        <div class="container-fluid">
+            <div class="row g-0">
+
+                <!-- Left Video + Info -->
+                <div class="col-lg-8 bot-n-hero-video-col">
+                    <video autoplay muted loop playsinline>
+                        <source src="./assets/img/3773488-hd_1920_1080_30fps.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="bot-n-hero-left-realestate">
+                        <h5>Booking Open</h5>
+                        <h4>SALFORD – Luxury Homes at Prime Location</h4>
+
+                        <div class="highlight-list">
+                            <div class="highlight-item">Exclusive Pre-Launch Pricing</div>
+                            <div class="highlight-item">Early Access Booking Window</div>
+                            <div class="highlight-item">Priority Inventory Selection</div>
+                            <div class="highlight-item">Possession by 2029</div>
+                        </div>
+
+                        <div class="price-box">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            Starting at ₹2.21 Cr Onwards
+                        </div>
+
+                        <a href="#" class="btn-brochure">
+                            Download Brochure <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="col-lg-4 bot-n-hero-form-col">
+                    <div class="bot-n-hero-form">
+                        <h5>Get Priority Access & Exclusive Pricing</h5>
+
+                        <div class="call-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                Call Us <br>
+                                <strong>+91 9878988978</strong>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter Full Name">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text phone-flag">
+                                <img src="https://flagcdn.com/w20/in.png" alt="IN Flag">
+                            </span>
+                            <input type="tel" class="form-control" placeholder="Enter Phone Number">
+                            <span class="input-group-text"><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Enter your email (Optional)">
+                        </div>
+                        <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
+
+                        <button class="btn btn-submit">Submit</button>
+
+                        <div class="site-visit-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="Visit">
+                            <div>
+                                <strong>Book A Free Site Visit</strong><br>
+                                <small>Schedule at your convenience</small>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-site-visit">
+                            Schedule a Free Site Visit <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- hero section -->
+
+    <!-- About Section -->
+    <section class="bot-n-about-realestate">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Left Image -->
+                <div class="col-lg-6 position-relative">
+                    <img src="./assets/img/ablut-page.jpg" class="img-fluid rounded" alt="About Real Estate">
+                    <!-- Rating Box -->
+                    <div class="rating-box position-absolute top-0 start-0 translate-middle-y ms-4">
+                        <h2>4.0</h2>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <small>Trusted on</small>
+                        <a href="#" class="d-block fw-bold text-decoration-none">500+ Reviews</a>
+                    </div>
+
+                    <!-- Stats Box -->
+                    <div class="stats-box">
+                        <div>
+                            <h3>250+</h3>
+                            <span>Property Sale</span>
+                        </div>
+                        <div>
+                            <h3>190+</h3>
+                            <span>Fully Funded</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Text -->
+                <div class="col-lg-6 about-text">
+                    <h6>About Us</h6>
+                    <h2>Your Gateway to Smart Real Estate Investments</h2>
+                    <p>
+                        We are a blockchain-powered real estate tokenization platform, offering secure, hassle-free
+                        investment opportunities to a growing community of savvy investors. With thousands of active
+                        investors and a portfolio of high-demand, trendsetting properties, we make property ownership
+                        accessible to everyone through fractional investments.
+                    </p>
+                    <p>
+                        Our commitment to delivering value is unmatched — we have already paid out over AED 15,000,000
+                        in bonuses to our investors. Whether you're looking for steady rental income or long-term
+                        capital appreciation, we provide the tools, transparency, and trust you need to succeed in the
+                        modern real estate market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= price section================== -->
+    <!-- Pricing Section -->
+    <section class="bot-n-price-sec" id="price">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Pricing Table -->
+                <div class="col-lg-8">
+                    <h3>Pricing Plans</h3>
+                    <p>Choose from our range of luxurious 3 & 3.5 BHK residences, each designed to offer the perfect
+                        blend of comfort and sophistication.</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Carpet Area</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3 BHK</td>
+                                    <td>~1250 Sq.ft.</td>
+                                    <td>₹3.21 Cr Onwards</td>
+                                    <td><button class="btn btn-download">Download Plan</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4 BHK</td>
+                                    <td>~1650 Sq.ft.</td>
+                                    <td>₹3.21 Cr Onwards</td>
+                                    <td><button class="btn btn-download">Download Plan</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2 BHK</td>
+                                    <td>~1450 Sq.ft.</td>
+                                    <td>₹2.21 Cr Onwards</td>
+                                    <td><button class="btn btn-download">Download Plan</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-4 costing-box">
+                    <h5>Costing</h5>
+                    <div class="costiing-img">
+                        <img src="./assets/img/costing.png" alt="Costing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Offer Button (Fixed on Screen) -->
+    <div class="exclusive-offer-btn" data-bs-toggle="modal" data-bs-target="#offerModal">
+        <i class="fa-solid fa-gift"></i> Get Exclusive Offer
+    </div>
+
+    <!-- Modal Form -->
+    <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="bot-n-all-pop-form">
+                    <!-- Close Button -->
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="Salford Logo">
+                    </div>
+
+                    <!-- Title -->
+                    <h4>Get Priority Access & Exclusive Pricing</h4>
+                    <p>Create your account to explore exclusive property deals, track performance, and unlock smart
+                        investment tools.</p>
+
+                    <!-- Form -->
+                    <form id="offerForm">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-flag"></i>
+                            <input type="tel" class="form-control" placeholder="Enter Phone Number" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Start Tour</button>
+                    </form>
+
+                    <!-- We Promise Section -->
+                    <div class="promise">
+                        <h6>We Promise</h6>
+                        <div class="promise-icons">
+                            <div class="item">
+                                <img src="./assets/img/instant.png" alt="Call Back">
+                                <p>Instant Call Back</p>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/price.png" alt="Price">
+                                <p>Unmatched Price</p>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/vit.png" alt="Site Visit">
+                                <p>Free Site Visit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================price section end ==============  -->
+
+    <!-- =============== plan section ======== -->
+    <!-- Floor Plan Section -->
+    <section class="bot-n-floor-sec" id="floor-plan-item">
+        <div class="container">
+            <!-- Heading + Filter in 1 Row -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+                <h3>Floor Plan</h3>
+                <div class="filter-btns">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="2bhk">2BHK</button>
+                    <button data-filter="3bhk">3BHK</button>
+                    <button data-filter="4bhk">4BHK</button>
+                </div>
+            </div>
+
+            <!-- Floor Plan Grid -->
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6 floor-plan-item 2bhk">
+                    <img src="./assets/img/plan1.png" alt="2BHK Plan">
+                </div>
+                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk">
+                    <img src="./assets/img/plan2.png" alt="3BHK Plan">
+                </div>
+                <div class="col-md-3 col-sm-6 floor-plan-item 4bhk">
+                    <img src="./assets/img/plan3.png" alt="4BHK Plan">
+                </div>
+                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk">
+                    <img src="./assets/img/plan4.png" alt="3BHK Plan">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== plan end ============= -->
+    <!-- ==gallery -->
+    <section class="bot-n-gallery-realste container" id="gallery">
+        <h3>Gallery</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="https://picsum.photos/id/1011/600/400" alt="Gallery 1"></div>
+            <div class="item"><img src="https://picsum.photos/id/1012/600/400" alt="Gallery 2"></div>
+            <div class="item"><img src="https://picsum.photos/id/1013/600/400" alt="Gallery 3"></div>
+            <div class="item"><img src="https://picsum.photos/id/1014/600/400" alt="Gallery 4"></div>
+            <div class="item"><img src="https://picsum.photos/id/1015/600/400" alt="Gallery 5"></div>
+            <div class="item"><img src="https://picsum.photos/id/1016/600/400" alt="Gallery 6"></div>
+        </div>
+    </section>
+    <!-- gallery end -->
+    <!-- anemtitie -->
+
+    <section class="bot-n-amenities container" id="anemtitie">
+        <h3>Amenities</h3>
+        <div class="row g-3">
+            <!-- Gym -->
+            <div class="col-lg-6 col-md-6">
+                <div class="amenity-card">
+                    <img src="./assets/img/gym.png" alt="Gym">
+                    <div class="amenity-overlay">Gym</div>
+                </div>
+            </div>
+
+            <!-- Swimming Pool -->
+            <div class="col-lg-6 col-md-6">
+                <div class="amenity-card">
+                    <img src="./assets/img/swimming.png" alt="Swimming Pool">
+                    <div class="amenity-overlay">Swimming Pool</div>
+                </div>
+            </div>
+
+            <!-- Clubhouse -->
+            <div class="col-lg-4 col-md-6">
+                <div class="amenity-card">
+                    <img src="./assets/img/clubhoue.png" alt="Clubhouse">
+                    <div class="amenity-overlay">Clubhouse</div>
+                </div>
+            </div>
+
+            <!-- Kids Area -->
+            <div class="col-lg-4 col-md-6">
+                <div class="amenity-card">
+                    <img src="./assets/img/kids.png" alt="Kids Area">
+                    <div class="amenity-overlay">Kids Area</div>
+                </div>
+            </div>
+
+            <!-- View Garden -->
+            <div class="col-lg-4 col-md-6">
+                <div class="amenity-card">
+                    <img src="./assets/img/garden.png" alt="View Garden">
+                    <div class="amenity-overlay">View Garden</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- amenties end -->
+
+    <!-- =========location======== -->
+    <section class="bot-n-location container" id="location">
+        <h3>Map Location</h3>
+        <div class="row g-3">
+            <!-- Left Map Image -->
+            <div class="col-lg-6">
+                <div class="location-map">
+                    <img src="./assets/img/map-1.png" alt="Satellite View">
+                </div>
+            </div>
+
+            <!-- Right Google Map -->
+            <div class="col-lg-6">
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8681300497824!2d-73.87003968459563!3d40.73755797932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e3e41b3dff9%3A0xe5bb3bcb4c1e09c3!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1615323789076!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p class="mt-2"><strong>Sapphire Square, Magarpatta City</strong><br>UAE – Area Near Mall of the
+                    Emirates</p>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mt-4" id="bot-n-locationTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="schools-tab" data-bs-toggle="tab" data-bs-target="#schools"
+                    type="button">Schools</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="metro-tab" data-bs-toggle="tab" data-bs-target="#metro"
+                    type="button">Metro</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="airport-tab" data-bs-toggle="tab" data-bs-target="#airport"
+                    type="button">Airport</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="itparks-tab" data-bs-toggle="tab" data-bs-target="#itparks"
+                    type="button">IT Parks</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content distance-list" id="bot-n-locationTabContent">
+            <!-- Schools -->
+            <div class="tab-pane fade show active" id="schools" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Green Valley Residency, Wakad</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Sunshine Heights, Kharadi</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Palm Grove Apartments, Baner</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Lakeview Towers, Hinjewadi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metro -->
+            <div class="tab-pane fade" id="metro" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station A - 2 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station B - 5 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station C - 8 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station D - 10 km</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Airport -->
+            <div class="tab-pane fade" id="airport" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Pune Intl. Airport - 12 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Mumbai Intl. Airport - 140 km</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IT Parks -->
+            <div class="tab-pane fade" id="itparks" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Hinjewadi IT Park - 5 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Magarpatta IT Park - 7 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">EON IT Park, Kharadi - 9 km</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========location end -->
+    <!-- vidwo  -->
+    <div class="container-fluid">
+        <section class="bot-n-realstate-video">
+            <!-- Background video (fallback image if video not supported) -->
+            <video autoplay muted loop playsinline>
+                <source src="./assets/img/real-video.mp4" type="video/mp4">
+            </video>
+
+            <!-- Play Button - link to YouTube -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </section>
+    </div>
+
+    <!-- video end -->
+
+    <!-- growth -->
+    <section class="bot-n-growth-realstate container">
+        <h2>It’s Really This Simple</h2>
+        <div class="row g-4">
+            <!-- Step 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="growth-card">
+                    <div class="step-number">01.</div>
+                    <h4>Buy</h4>
+                    <h5>Tokenized Real Estate</h5>
+                    <p>Browse our property-curated portfolio and invest in tokenized luxury properties starting from
+                        just
+                        <strong>₹50</strong>.
+                    </p>
+                    <ul>
+                        <li>Fractional ownership</li>
+                        <li>Low minimum investment</li>
+                        <li>Instant purchase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="growth-card">
+                    <div class="step-number">02.</div>
+                    <h4>Grow</h4>
+                    <h5>Smart Wealth Growth</h5>
+                    <p>Grow your real estate investments over time through compounding returns and market appreciation.
+                    </p>
+                    <ul>
+                        <li>Reinvest rental income</li>
+                        <li>Long-term value growth</li>
+                        <li>Smart portfolio expansion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="growth-card">
+                    <div class="step-number">03.</div>
+                    <h4>Earn</h4>
+                    <h5>Passive Income</h5>
+                    <p>Receive monthly rental income and capital appreciation directly to your wallet automatically.</p>
+                    <ul>
+                        <li>Monthly distributions</li>
+                        <li>Capital appreciation</li>
+                        <li>Automated payments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- growth end -->
+    <!-- tesmonila -->
+    <section class="bot-n-tesmonila-section container">
+        <div class="bot-n-tesmonila-header">
+            <h2>People say about us...</h2>
+            <div class="bot-n-tesmonila-nav">
+                <button class="bot-n-tesmonila-prev"><i class="fa fa-arrow-left"></i></button>
+                <button class="bot-n-tesmonila-next"><i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="owl-carousel bot-n-tesmonila-carousel">
+            <!-- Card 1 -->
+            <div class="bot-n-tesmonila-card">
+                <h5>Luxury Apartment Investor</h5>
+                <p>Owning a share of a Dubai Marina apartment for just AED 5,000 felt unreal. I get monthly rent
+                    payouts, and my
+                    property value has grown. Blockchain transparency makes me trust every step.</p>
+                <div class="bot-n-tesmonila-user">
+                    <div class="bot-n-tesmonila-img">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Ahmed Raza">
+
+                    </div>
+                    <div>
+                        <h6>Ahmed Raza</h6>
+                        <small>Downtown Dubai</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bot-n-tesmonila-card">
+                <h5>Commercial Property Investor</h5>
+                <p>Bought fractional tokens in a Business Bay office, earned 12% growth in a year plus steady payouts.
+                    No
+                    paperwork, no hassles — just secure blockchain-backed investing.</p>
+                <div class="bot-n-tesmonila-user">
+                    <div class="bot-n-tesmonila-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Mehra">
+
+                    </div>
+                    <div>
+                        <h6>Priya Mehra</h6>
+                        <small>Dubai Marina</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bot-n-tesmonila-card">
+                <h5>Diversified Portfolio Holder</h5>
+                <p>I hold tokens in four properties — residential, commercial, and vacation homes. Great returns, easy
+                    tracking,
+                    and total peace of mind thanks to blockchain security.</p>
+                <div class="bot-n-tesmonila-user">
+                    <div class="bot-n-tesmonila-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Al-Fayed">
+
+                    </div>
+                    <div>
+                        <h6>James Al-Fayed</h6>
+                        <small>Business Bay</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tesmonil end -->
+    <!-- footer  -->
+    <div class="bot-N-footer-realstate">
+        <footer class=" container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="Salford Logo">
+                    </div>
+                    <p>We have built our reputation as true local area experts.</p>
+                    <div class="newsletter d-flex">
+                        <input type="email" placeholder="Input your email">
+                        <button>Send</button>
+                    </div>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="col-md-4 qr-box text-center">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://saleford.gov.in"
+                        alt="QR Code">
+                    <small><strong>RERA Registration No: P52100032842</strong></small>
+                    <small>Details of the project are available on the official website of RERA:</small>
+                    <small><a href="https://saleford.gov.in" target="_blank">https://saleford.gov.in</a></small>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-2">
+                    <div class="service mb-3">
+                        <h5>Service</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#price">Price</a></li>
+                            <li><a href="#floor-plan-item">Visit</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-box">
+                        <i class="fa fa-phone"></i>
+                        <div class="text">
+                            <h6>Call Us</h6>
+                            <span>+91 9878989878</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="text">
+                            <h6>WhatsApp Ple</h6>
+                            <span>+91 9878989878</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+    <!-- Bootstrap JS -->
+    <script>
+        document.getElementById("offerForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Stop default submit
+            // Redirect to Thank You page
+            window.location.href = "thankyou.html";
+        });
+    </script>
+    <script>
+        // Close button redirect to homepage
+        document.getElementById("closeForm").addEventListener("click", function () {
+            window.location.href = "index.html"; // ✅ Yaha aap "/" bhi kar sakte ho agar root homepage hai
+        });
+    </script>
+    <!--floor plan  -->
+    <script>
+        // Filtering Function
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".filter-btns button");
+            const items = document.querySelectorAll(".floor-plan-item");
+
+            function filterPlans(category) {
+                items.forEach(item => {
+                    if (category === "all" || item.classList.contains(category)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+                    const category = button.getAttribute("data-filter");
+                    filterPlans(category);
+                });
+            });
+
+            // Default show all
+            filterPlans("all");
+        });
+    </script>
+
+    <!-- =============galelry -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                center: true,
+                nav: true,
+                navText: [
+                    '<i class="fa-solid fa-arrow-left"></i>',
+                    '<i class="fa-solid fa-arrow-right"></i>'
+                ],
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        });
+    </script>
+    <!-- ========gellery end -->
+
+    <!-- tesmonila -->
+    <script>
+        $(document).ready(function () {
+            var owl = $(".bot-n-tesmonila-carousel");
+            owl.owlCarousel({
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+
+            // Custom Nav
+            $(".bot-n-tesmonila-next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+            $(".bot-n-tesmonila-prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+        });
+    </script>
+    <!-- temonial -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
