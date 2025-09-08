@@ -58,7 +58,8 @@
                         <a class="nav-link" href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn download-btn" href="#"><i class="fa-solid fa-download"></i> Download Brochure</a>
+                        <a class="btn download-btn" href="#"><i class="fa-solid fa-download" data-bs-toggle="modal"
+                                data-bs-target="#offerModal"></i> Download Brochure</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +93,7 @@
                             Starting at ₹2.21 Cr Onwards
                         </div>
 
-                        <a href="#" class="btn-brochure">
+                        <a href="#" class="btn-brochure" data-bs-toggle="modal" data-bs-target="#offerModal">
                             Download Brochure <i class="fa-solid fa-download"></i>
                         </a>
                     </div>
@@ -345,16 +346,16 @@
 
             <!-- Floor Plan Grid -->
             <div class="row g-4">
-                <div class="col-md-3 col-sm-6 floor-plan-item 2bhk">
+                <div class="col-md-3 col-sm-6 floor-plan-item 2bhk" data-bs-toggle="modal" data-bs-target="#offerModal">
                     <img src="./assets/img/plan1.png" alt="2BHK Plan">
                 </div>
-                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk">
+                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk" data-bs-toggle="modal" data-bs-target="#offerModal">
                     <img src="./assets/img/plan2.png" alt="3BHK Plan">
                 </div>
-                <div class="col-md-3 col-sm-6 floor-plan-item 4bhk">
+                <div class="col-md-3 col-sm-6 floor-plan-item 4bhk" data-bs-toggle="modal" data-bs-target="#offerModal">
                     <img src="./assets/img/plan3.png" alt="4BHK Plan">
                 </div>
-                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk">
+                <div class="col-md-3 col-sm-6 floor-plan-item 3bhk" data-bs-toggle="modal" data-bs-target="#offerModal">
                     <img src="./assets/img/plan4.png" alt="3BHK Plan">
                 </div>
             </div>
@@ -674,9 +675,9 @@
     <!-- footer  -->
     <div class="bot-N-footer-realstate">
         <footer class=" container">
-            <div class="row">
+            <div class="row g-3">
                 <!-- Left Column -->
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <div class="logo">
                         <img src="./assets/img/logo.png" alt="Salford Logo">
                     </div>
@@ -688,7 +689,7 @@
                 </div>
 
                 <!-- Middle Column -->
-                <div class="col-md-4 qr-box text-center">
+                <div class="col-md-4 qr-box text-center mb-3">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://saleford.gov.in"
                         alt="QR Code">
                     <small><strong>RERA Registration No: P52100032842</strong></small>
@@ -710,23 +711,25 @@
 
 
                 </div>
-                <div class="col-md-3">
-                    <div class="contact-box">
+                <div class="col-md-3 contact-section">
+                    <a href="tel:+919878989878" class="contact-box">
                         <i class="fa fa-phone"></i>
                         <div class="text">
                             <h6>Call Us</h6>
                             <span>+91 9878989878</span>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="contact-box">
+                    <a href="https://wa.me/919878989878" target="_blank" class="contact-box">
                         <i class="fab fa-whatsapp"></i>
                         <div class="text">
-                            <h6>WhatsApp Ple</h6>
+                            <h6>WhatsApp</h6>
                             <span>+91 9878989878</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
+
+
             </div>
         </footer>
     </div>
@@ -785,11 +788,17 @@
 
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            var $owl = $(".owl-carousel");
+
+            $owl.owlCarousel({
                 loop: true,
                 margin: 20,
-                center: true,
+                center: false,       // ✅ सिर्फ left वाला बड़ा होगा
                 nav: true,
+                dots: false,
+                mouseDrag: true,     // ✅ swipe enable
+                touchDrag: true,
+                pullDrag: true,
                 navText: [
                     '<i class="fa-solid fa-arrow-left"></i>',
                     '<i class="fa-solid fa-arrow-right"></i>'
@@ -800,8 +809,23 @@
                     1000: { items: 3 }
                 }
             });
+
+            // ✅ पहला active item को highlight करना
+            function highlightFirst() {
+                $(".owl-item .item").removeClass("highlight");
+                $(".owl-item.active").first().find(".item").addClass("highlight");
+            }
+
+            // init पर call
+            highlightFirst();
+
+            // हर slide change पर call
+            $owl.on("changed.owl.carousel", function () {
+                setTimeout(highlightFirst, 50);
+            });
         });
     </script>
+
     <!-- ========gellery end -->
 
     <!-- tesmonila -->
