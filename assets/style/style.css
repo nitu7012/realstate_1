@@ -24,6 +24,7 @@
 
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     /* Custom Navbar */
@@ -342,7 +343,9 @@
         margin-bottom: 1.5rem;
         font-size: 14px;
     }
-
+.bot-n-hero-form-col a{
+    text-decoration: none;
+}
     .call-box i {
         font-size: 20px;
     }
