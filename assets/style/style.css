@@ -1,4 +1,5 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
     :root {
         --dark-bg: #0b1a33;
         --white: #fff;
@@ -21,7 +22,8 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif; /* Montserrat font applied */
+        font-family: 'Montserrat', sans-serif;
+        /* Montserrat font applied */
     }
 
     body {
@@ -345,9 +347,11 @@
         margin-bottom: 1.5rem;
         font-size: 14px;
     }
-.bot-n-hero-form-col a{
-    text-decoration: none;
-}
+
+    .bot-n-hero-form-col a {
+        text-decoration: none;
+    }
+
     .call-box i {
         font-size: 20px;
     }
@@ -1136,7 +1140,7 @@
 
     /* footer start */
     .bot-N-footer-realstate {
-        background: var(--white);
+        background: var(--dark-bg);
         padding: 50px 0 30px;
         font-family: 'Poppins', sans-serif;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -1149,7 +1153,7 @@
 
     .bot-N-footer-realstate p {
         font-size: 14px;
-        color: #333;
+        color:var(--border);
         margin-bottom: 15px;
     }
 
@@ -1185,7 +1189,7 @@
     .bot-N-footer-realstate .qr-box small {
         display: block;
         font-size: 13px;
-        color: #333;
+        color:var(--border);
     }
 
     .service {
@@ -1195,6 +1199,7 @@
     .bot-N-footer-realstate .service h5 {
         font-weight: 600;
         margin-bottom: 15px;
+        color: var(--border);
     }
 
     .bot-N-footer-realstate .service ul {
@@ -1209,7 +1214,7 @@
 
     .bot-N-footer-realstate .service ul li a {
         text-decoration: none;
-        color: #333;
+        color:var(--border);
         font-size: 14px;
         transition: 0.3s;
     }
